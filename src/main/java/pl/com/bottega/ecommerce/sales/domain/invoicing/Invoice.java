@@ -41,8 +41,8 @@ public class Invoice {
         this.gros = Money.ZERO;
     }
 
-    public static Invoice createInvoice(Id invoiceId, ClientData client){
-        return new Invoice(invoiceId,client);
+    public static Invoice createInvoice(Id invoiceId, ClientData client) {
+        return new Invoice(invoiceId, client);
     }
 
     public void addItem(InvoiceLine item) {
@@ -53,7 +53,6 @@ public class Invoice {
     }
 
     /**
-     * 
      * @return immutable projection
      */
     public List<InvoiceLine> getItems() {
